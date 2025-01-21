@@ -1,2 +1,1 @@
-# udemy-react
-Created with CodeSandbox
+kurs udemy react
