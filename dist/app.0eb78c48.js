@@ -228,9 +228,24 @@ setTimeout(function () {
 function greeter(greetFn) {
   greetFn();
 }
+
+//przzekazywanie funkcji w parametrze unkcji jest normalne
 greeter(function () {
   return console.log('hi');
 });
+
+/* WARTOŚĆ PRYMITYWNA  */
+/* strings, numbers, booleans = to wartości prymitywne. w JS nie możemy ich edytowac.
+    można je nadpisać ale to zupełnie nowy string. nawet jak wykonamy na nim metodę to powstanie nowa wartość
+*/
+
+var userMEssage = 'Hello';
+
+/* WARTOŚĆ REFERENCYJNYMI */
+/* wartościamu relatywnymi są obiekty i tablice
+     w zmiennej nie przechowuje się zmiennej ale adres teh wartości zapisanej w pamięci.
+dlatego można edytować tablicę nawet jeśli użyję const
+     */
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

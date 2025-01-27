@@ -100,4 +100,18 @@ function greeter(greetFn) {
   greetFn();
 }
 
+//przzekazywanie funkcji w parametrze unkcji jest normalne
 greeter(() => console.log('hi'));
+
+/* WARTOŚĆ PRYMITYWNA  */
+/* strings, numbers, booleans = to wartości prymitywne. w JS nie możemy ich edytowac.
+    można je nadpisać ale to zupełnie nowy string. nawet jak wykonamy na nim metodę to powstanie nowa wartość
+*/
+
+let userMEssage = 'Hello';
+
+/* WARTOŚĆ REFERENCYJNYMI */
+/* wartościamu relatywnymi są obiekty i tablice
+     w zmiennej nie przechowuje się zmiennej ale adres teh wartości zapisanej w pamięci.
+dlatego można edytować tablicę nawet jeśli użyję const
+     */
