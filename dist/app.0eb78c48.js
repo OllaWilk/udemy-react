@@ -196,6 +196,24 @@ var extendedUser = _objectSpread({
   isAdmin: true
 }, user);
 console.log(extendedUser);
+
+/* IF ELSE */
+// const password = prompt('youre password');
+var password = '';
+if (password === 'hello') {
+  console.log('hello works');
+} else if (password === 'Hello') {
+  console.log('Hello works');
+} else {
+  console.log('Access not granted');
+}
+
+/* PĘTLE */
+var annimals = ['cat', 'dog'];
+for (var _i = 0, _annimals = annimals; _i < _annimals.length; _i++) {
+  var animal = _annimals[_i];
+  console.log(animal);
+}
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

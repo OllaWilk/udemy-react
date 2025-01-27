@@ -63,3 +63,21 @@ const extendedUser = {
 };
 
 console.log(extendedUser);
+
+/* IF ELSE */
+// const password = prompt('youre password');
+const password = '';
+if (password === 'hello') {
+  console.log('hello works');
+} else if (password === 'Hello') {
+  console.log('Hello works');
+} else {
+  console.log('Access not granted');
+}
+
+/* PĘTLE */
+const annimals = ['cat', 'dog'];
+
+for (const animal of annimals) {
+  console.log(animal);
+}
