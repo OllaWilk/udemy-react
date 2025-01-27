@@ -19,10 +19,10 @@ const [firstName, lastName] = ['Max', 'Doe'];
 // destrukturyzacja dla obiektu
 
 /* 1 wyciąganie z obiektu  */
-// const user = {
-//     name: "Ola",
-//     age: 34
-// }
+const user = {
+  name: 'Ola',
+  age: 34,
+};
 
 //const name = user.name
 //const age= user.age
@@ -44,3 +44,22 @@ function storeOrder({ id, currency, amount }) {
   console.log(storageCheck);
 }
 storeOrder({ id: 5, currency: 'USD', amount: 15.99 });
+
+/* Tworzenie nowej listy */
+const hobbies = ['play', 'walk'];
+/* 1. przez napisanie [] */
+const newHobbies = ['Read'];
+
+/* 2. Przez spreed operator */
+const mergedHobbies = [...newHobbies, ...hobbies];
+
+console.log(mergedHobbies);
+
+/* SRREED OPERATOR WOBJekcie */
+
+const extendedUser = {
+  isAdmin: true,
+  ...user,
+};
+
+console.log(extendedUser);
