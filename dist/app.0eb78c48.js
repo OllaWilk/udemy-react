@@ -214,6 +214,23 @@ for (var _i = 0, _annimals = annimals; _i < _annimals.length; _i++) {
   var animal = _annimals[_i];
   console.log(animal);
 }
+function handleTioeout() {
+  console.log('timed out!');
+}
+var handleTimout2 = function handleTimout2() {
+  console.log('Timed out ..again!');
+};
+setTimeout(handleTioeout, 2000);
+setTimeout(handleTimout2, 4000);
+setTimeout(function () {
+  console.log('More timing out...');
+}, 6000);
+function greeter(greetFn) {
+  greetFn();
+}
+greeter(function () {
+  return console.log('hi');
+});
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

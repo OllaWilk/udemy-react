@@ -81,3 +81,23 @@ const annimals = ['cat', 'dog'];
 for (const animal of annimals) {
   console.log(animal);
 }
+
+function handleTioeout() {
+  console.log('timed out!');
+}
+
+const handleTimout2 = () => {
+  console.log('Timed out ..again!');
+};
+
+setTimeout(handleTioeout, 2000);
+setTimeout(handleTimout2, 4000);
+setTimeout(() => {
+  console.log('More timing out...');
+}, 6000);
+
+function greeter(greetFn) {
+  greetFn();
+}
+
+greeter(() => console.log('hi'));
