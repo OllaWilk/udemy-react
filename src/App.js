@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import img from './assets/react-core-concepts.png';
+
+const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
+
+function genRandomInt(max) {
+  return Math.floor(Math.random() * (max + 1));
+}
+
+function Header() {
+  const descritpoion = reactDescriptions[genRandomInt(2)];
+
+  return (
+    <header>
+      <img src={img} alt='Stylized atom' />
+      <h1>React Essentials</h1>
+      <p>
+        {descritpoion} React concepts you will need for almost any app you are
+        going to build!
+      </p>
+    </header>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <main>
+        <h2>Time to get started!</h2>
+      </main>
     </div>
   );
 }
